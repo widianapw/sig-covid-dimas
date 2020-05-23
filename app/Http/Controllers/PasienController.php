@@ -37,7 +37,7 @@ class PasienController extends Controller
         $kabupaten = Kabupaten::all();
 
         $date   = \Carbon\Carbon::now()->format('d F Y');
-        return view('pasien.index',compact('kabupaten','positif','rawat','sembuh','meninggal','date'));
+        return view('Pasien.index',compact('kabupaten','positif','rawat','sembuh','meninggal','date'));
     }
 
     /**
